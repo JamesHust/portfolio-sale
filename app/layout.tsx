@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "@/components/theme-provider";
-import type { Metadata, Viewport } from "next";
+import type { Viewport } from "next";
 import { getLocaleOnServer } from "@/i18n/server";
 import BrowserInitiator from "@/components/browser-initiator";
 import I18NServer from "@/components/i18n-server";
@@ -12,10 +12,6 @@ export const viewport: Viewport = {
   maximumScale: 1,
   viewportFit: "cover",
   userScalable: false,
-};
-
-export const metadata: Metadata = {
-  title: "Tova",
 };
 
 const LocaleLayout = ({
@@ -47,27 +43,19 @@ const LocaleLayout = ({
           name="apple-mobile-web-app-status-bar-style"
           content="default"
         />
-        <title>Studio TOVA</title>
+        <title>My Portfolio</title>
       </head>
-      <body
-        className="h-full font-sans"
-        data-api-prefix={process.env.NEXT_PUBLIC_API_PREFIX}
-        data-public-api-prefix={process.env.NEXT_PUBLIC_PUBLIC_API_PREFIX}
-        data-public-socket-endpoint={process.env.NEXT_PUBLIC_SOCKET_ENDPOINT}
-        data-public-enable-mode={process.env.NEXT_PUBLIC_ENABLE_MODE || "off"}
-      >
+      <body className="h-full font-sans">
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
           <BrowserInitiator>
             {/* @ts-expect-error Async Server Component */}
             <I18NServer locale={locale}>
-              <main>
-                {children}
-              </main>
+              <main>{children}</main>
             </I18NServer>
           </BrowserInitiator>
         </ThemeProvider>
