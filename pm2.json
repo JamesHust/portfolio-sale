@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "portfolio-sale",
+      "script": "/app/server.js",
+      "cwd": "/app",
+      "exec_mode": "cluster",
+      "instances": 2
+    }
+  ]
+}
