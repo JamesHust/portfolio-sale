@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  portfolio-sale:
+    image: "hackathon"
+    command: npm run dev & wait-on tcp:3000 -v
+    ports:
+      - 3000:3000
+    # environment:
+    # VITE_APP_BASE_API_URL: http://103.176.146.250:1111
+    restart: always
