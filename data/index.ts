@@ -1,171 +1,110 @@
 export const navItems = [
   { name: "About", link: "#about" },
+  { name: "Partners", link: "#partners" },
   { name: "Projects", link: "#projects" },
   { name: "Contact", link: "#contact" },
 ];
 
-export const gridItems = [
+export const certificatesPartners = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
-    description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
-    spareImg: "",
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/ISO-27001.jpg",
+    name: "ISO/IEC 27001:2013",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "",
-    spareImg: "",
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2023/02/logo_chung_chi_2018.png",
+    name: "ISO/IEC 27018:2019",
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/ISO-27017-scaled.jpg",
+    name: "ISO/IEC 27017:2015",
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/pci-dss_2x.png",
+    name: "PCI DSS",
   },
-
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/MicrosoftTeams-image-4.png",
+    name: "ISO/IEC 9001 2015",
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
-    img: "",
-    spareImg: "",
-  },
-];
-
-export const projects = [
-  {
-    id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/05/logo-ccafee.png",
+    name: "McAfee",
   },
   {
-    id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    id: 7,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/05/logo-net-app.png",
+    name: "NetApp",
   },
   {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    id: 8,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/Vmware-e1658977050261.png",
+    name: "VMware Cloud Verified",
   },
   {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 9,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/Dell-e1658977121623.png",
+    name: "Dell",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 10,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/05/logo-red-hat.png",
+    name: "ISO/IEC 27001:2013",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 11,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/Veeam-e1658977082937.png",
+    name: "Veeam",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 12,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/BeyondTrust-e1658977145363.png",
+    name: "BeyoundTrust",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    id: 13,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/Checkpoint.png",
+    name: "Check Point",
   },
   {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    id: 14,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/Juniper-e1658977169951.png",
+    name: "Juniper Networks",
   },
   {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    id: 15,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/BeyondTrust-e1658977145363.png",
+    name: "BeyoundTrust",
   },
   {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    id: 16,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/Imperva-e1658977204853.png",
+    name: "Imperva",
   },
   {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    id: 17,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/07/Microsoft.png",
+    name: "Microsoft Gold Partner",
+  },
+  {
+    id: 18,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2022/12/MicrosoftTeams-image-39.png",
+    name: "Google Cloud Premier Partner",
+  },
+  {
+    id: 19,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2023/04/1331x392.png",
+    name: "CyRadar",
+  },
+  {
+    id: 20,
+    imgUrl: "https://fptcloud.com/wp-content/uploads/2024/01/CloudGO-logo-vertical.png",
+    name: "CloudGO",
   },
 ];
 
@@ -198,19 +137,4 @@ export const projectsList = [
     className: "md:col-span-2",
     thumbnail: "/img/exp4.svg",
   },
-];
-
-export const socialMedia = [
-    {
-        id: 1,
-        img: "/git.svg",
-    },
-    {
-        id: 2,
-        img: "/twit.svg",
-    },
-    {
-        id: 3,
-        img: "/link.svg",
-    },
 ];

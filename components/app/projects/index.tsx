@@ -6,12 +6,14 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div className="py-20 w-full">
+    <section
+      className="pt-44 pb-10 w-fgit ull z-[2]"
+      id="projects"
+    >
       <h1 className="heading">
         Our <span className="text-purple">projects</span>
       </h1>
-
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
+      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-5">
         {projectsList.map((card) => (
           <Button
             key={card.id}
@@ -40,7 +42,7 @@ const Projects = () => {
           </Button>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
