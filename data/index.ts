@@ -169,48 +169,48 @@ export const companies = [
   },
 ];
 
-export const workExperience = [
+export const projectsList = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Project 1",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/img/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Project 2",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/img/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Project 3",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/img/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Project 4",
+    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/img/exp4.svg",
   },
 ];
 
 export const socialMedia = [
-  {
-    id: 1,
-    img: "/git.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
-  },
-  {
-    id: 3,
-    img: "/link.svg",
-  },
+    {
+        id: 1,
+        img: "/git.svg",
+    },
+    {
+        id: 2,
+        img: "/twit.svg",
+    },
+    {
+        id: 3,
+        img: "/link.svg",
+    },
 ];
