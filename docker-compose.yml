@@ -4,8 +4,6 @@ services:
     build: .
     container_name: hackathon
     restart: always
-    env_file:
-      - .env
     # environment:
     # VITE_APP_BASE_API_URL: http://103.176.146.250:1111
     ports:
