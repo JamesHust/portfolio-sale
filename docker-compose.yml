@@ -1,10 +1,20 @@
 version: "3.8"
 services:
   portfolio-sale:
-    image: "hackathon"
-    command: npm run dev & wait-on tcp:3000 -v
-    ports:
-      - 3000:3000
+    build: .
+    container_name: hackathon
+    restart: always
+    env_file:
+      - .env
     # environment:
     # VITE_APP_BASE_API_URL: http://103.176.146.250:1111
-    restart: always
+    ports:
+      - '3000:3000'
+    deploy:
+      resources:
+        limits:
+          cpus: '0.125'
+          memory: 2048M
+        reservations:
+          cpus: '0.125'
+          memory: 1024M
