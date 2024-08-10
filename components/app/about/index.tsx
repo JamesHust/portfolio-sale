@@ -10,7 +10,7 @@ import { profile } from "@/data";
 const About = () => {
   return (
     <section
-      className="relative max-w-7xl min-h-[85vh] z-[2] lg:mt-4 pb-40 mx-auto"
+      className="relative max-w-7xl min-h-[75vh] md:min-h-[85vh] z-[2] lg:mt-4 pb-40 mx-auto"
       id="about"
     >
       <div className="absolute top-[20%] left-0 right-0 z-10 flex flex-col items-center">
@@ -57,23 +57,27 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 w-full px-3 pb-5">
-              <a href={`tel:${profile.phoneNumber}`}>
+            <div className="flex flex-wrap items-center justify-center gap-3 md:gap-6 w-full pb-5">
+              <a
+                href={`tel:${profile.phoneNumber}`}
+                className="flex-1 flex justify-end"
+              >
                 <MagicButton
                   title="Call me"
                   icon={<Phone className="w-4 h-4" />}
                   position="right"
-                  className="min-w-[160px] max-w-[250px]"
+                  className="w-full md:max-w-[250px]"
                 />
               </a>
               <a
                 href={`mailto:${profile.email}?subject=${encodeURIComponent(profile.subjectEmail)}&body=${encodeURIComponent(profile.contentEmail)}`}
+                className="flex-1 flex justify-start"
               >
                 <MagicButton
                   title="Send email"
                   icon={<Send className="w-4 h-4" />}
                   position="right"
-                  className="min-w-[160px] max-w-[250px]"
+                  className="w-full md:max-w-[250px]"
                 />
               </a>
             </div>

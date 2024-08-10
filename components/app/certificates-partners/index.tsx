@@ -6,7 +6,7 @@ const CertificatesPartners = () => {
   return (
     <section
       id="partners"
-      className="pt-[18vh] overflow-x-hidden"
+      className="pt-[24vh] overflow-x-hidden"
     >
       <h1 className="font-bold text-center text-3xl md:text-5xl lg:text-6xl">
         Certificates
