@@ -1,9 +1,10 @@
 import BackgroundWrap from "@/components/base/gradient-bg";
 import { FloatingNav } from "@/components/base/floating-navbar";
 import { navItems } from "@/data";
-import Projects from "../components/app/projects";
 import About from "@/components/app/about";
 import CertificatesPartners from "@/components/app/certificates-partners";
+import { Contact } from "@/components/app/contact";
+import Products from "../components/app/products";
 
 export default function Home() {
   return (
@@ -14,15 +15,8 @@ export default function Home() {
         <div className="w-full">
           <About />
           <CertificatesPartners />
-          <Projects />
-          {/*<BackgroundWrap />*/}
-          {/*<FloatingNav navItems={navItems} />*/}
-
-          {/*<RecentProjects />*/}
-          {/*<Clients />*/}
-          {/*<Experience />*/}
-          {/*<Approach />*/}
-          {/*<Footer />*/}
+          <Products />
+          <Contact />
         </div>
       </div>
     </main>

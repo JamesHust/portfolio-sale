@@ -1,20 +1,20 @@
 import React from "react";
 
-import { projectsList } from "@/data";
+import { productsList } from "@/data";
 import { Button } from "@/components/base/moving-borders";
 import Image from "next/image";
 
-const Projects = () => {
+const Products = () => {
   return (
     <section
-      className="pt-44 pb-10 w-fgit ull z-[2]"
-      id="projects"
+      className="pt-32 md:pt-56 w-fgit ull z-[2]"
+      id="products"
     >
-      <h1 className="heading">
-        Our <span className="text-purple">projects</span>
+      <h1 className="font-bold text-center text-3xl md:text-5xl lg:text-6xl">
+        Our <span className="text-purple">products</span>
       </h1>
-      <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-5">
-        {projectsList.map((card) => (
+      <div className="w-[98%] md:w-full mt-8 md:mt-12 grid lg:grid-cols-4 grid-cols-1 gap-5">
+        {productsList.map((card) => (
           <Button
             key={card.id}
             duration={Math.floor(Math.random() * 10000) + 10000}
@@ -46,4 +46,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Products;

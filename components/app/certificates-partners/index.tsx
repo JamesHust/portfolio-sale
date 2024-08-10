@@ -6,15 +6,15 @@ const CertificatesPartners = () => {
   return (
     <section
       id="partners"
-      className="pt-48 md:pt-[20vh] overflow-x-hidden"
+      className="pt-[18vh] overflow-x-hidden"
     >
-      <h1 className="heading">
+      <h1 className="font-bold text-center text-3xl md:text-5xl lg:text-6xl">
         Certificates
         <span className="text-purple"> & Partners</span>
       </h1>
 
-      <div className="max-w-[91vw] flex flex-col items-center justify-center max-lg:mt-10">
-        <div className="w-full md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
+      <div className="max-w-[91vw] flex flex-col items-center justify-center mt-8 md:mt-12">
+        <div className="w-full rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden">
           <InfiniteMovingCarousels
             items={certificatesPartners}
             direction="right"

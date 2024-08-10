@@ -1,7 +1,17 @@
+import { format } from "date-fns";
+
+export const profile = {
+  titleCommon: `I'm Nguyen Van A \n Sales Manager at FPT Smart Cloud`,
+  email: "thanhdt66@fpt.com",
+  subjectEmail: "Booking meeting for product",
+  contentEmail: `Hello, I would like to book a product meeting on ${format(new Date(), "dd-MM-yyyy")}`,
+  phoneNumber: "0396814752",
+};
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Partners", link: "#partners" },
-  { name: "Projects", link: "#projects" },
+  { name: "Products", link: "#products" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -108,31 +118,31 @@ export const certificatesPartners = [
   },
 ];
 
-export const projectsList = [
+export const productsList = [
   {
     id: 1,
-    title: "Project 1",
+    title: "Product 1",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     className: "md:col-span-2",
     thumbnail: "/img/exp1.svg",
   },
   {
     id: 2,
-    title: "Project 2",
+    title: "Product 2",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/img/exp2.svg",
   },
   {
     id: 3,
-    title: "Project 3",
+    title: "Product 3",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/img/exp3.svg",
   },
   {
     id: 4,
-    title: "Project 4",
+    title: "Product 4",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     className: "md:col-span-2",
     thumbnail: "/img/exp4.svg",

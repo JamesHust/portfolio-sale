@@ -86,7 +86,7 @@ export const InfiniteMovingCarousels = ({
         {items.map((item, idx) => (
           <li
             //   change md:w-[450px] to md:w-[60vw] , px-8 py-6 to p-16, border-slate-700 to border-slate-800
-            className="w-[40vw] md:w-[10vw] max-w-full relative rounded-2xl p-4 flex flex-col items-center justify-center text-center"
+            className="w-[45vw] md:w-[25vw] lg:w-[20vw] xl:w-[12vw] 2xl:w-[10vw] max-w-full relative rounded-2xl p-5 flex flex-col items-center justify-center text-center"
             style={{
               backdropFilter: "blur(16px) saturate(180%)",
               backgroundColor: "rgba(17, 25, 40, 0.75)",

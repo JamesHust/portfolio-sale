@@ -30,6 +30,7 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
               // change here if idx is greater than 3, change the text color to #CBACF9
               className={` ${idx > 3 ? "text-purple" : "text-white"} opacity-0`}
             >
+              {word === "\n" && <br />}
               {word}{" "}
             </motion.span>
           );
