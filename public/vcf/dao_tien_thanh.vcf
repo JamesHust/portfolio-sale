@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:4.0
+FN:Đào Tiến Thành
+TEL;TYPE=CELL,pref:0396814752
+EMAIL;type=INTERNET;type=WORK;type=pref:johnDoe@example.org
+ORG:FPT Smart CLoud
+TITLE:Sales Manager
+PRODID:-//BBros LLC//BVCard.com 2.0.1//EN
+item1.URL;type=pref:bvcard.com
+item1.X-ABLabel:vCard generator
+END:VCARD

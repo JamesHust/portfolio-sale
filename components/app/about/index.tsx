@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 import { TextGenerateEffect } from "@/components/base/text-generate-effect";
-import { Phone, Send } from "lucide-react";
+import { Download, Phone, Send } from "lucide-react";
 import { profile } from "@/data";
 import { Button } from "@/components/ui/button";
 
@@ -79,9 +79,19 @@ const About = () => {
                 href={`mailto:${profile.email}?subject=${encodeURIComponent(profile.subjectEmail)}&body=${encodeURIComponent(profile.contentEmail)}`}
                 className="w-full"
               >
-                <Button className="w-full h-10 md:h-12 text-white bg-white/10">
+                <Button className="w-full h-10 md:h-12 text-white bg-gradient-to-r from-[#516dff] from-0% via-[#9e7ee1] via-70% to-[#fa92bd] to-100%">
                   <Send className="w-4 h-4 mr-2" />
                   Gửi email
+                </Button>
+              </a>
+              <a
+                href="/vcf/dao_tien_thanh.vcf"
+                download="dao_tien_thanh_profile.vcf"
+                className="w-full"
+              >
+                <Button className="w-full h-10 md:h-12 text-white bg-white/10">
+                  <Download className="w-4 h-4 mr-2" />
+                  Lưu liên hệ
                 </Button>
               </a>
             </div>

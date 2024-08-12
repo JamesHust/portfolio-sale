@@ -48,7 +48,7 @@ const LocaleLayout = ({
       <body className="h-full font-sans">
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
