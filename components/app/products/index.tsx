@@ -7,39 +7,45 @@ import Image from "next/image";
 const Products = () => {
   return (
     <section
-      className="pt-32 md:pt-56 w-fgit ull z-[2]"
+      className="md:pt-56 ull z-[2] px-4"
       id="products"
     >
-      <h1 className="font-bold text-center text-3xl md:text-5xl lg:text-6xl">
-        Our <span className="text-purple">products</span>
+      <h1 className="font-bold text-center text-2xl md:text-3xl lg:text-5xl text-white">
+        Thông tin <span className="text-purple">sản phẩm</span>
       </h1>
-      <div className="w-[98%] md:w-full mt-8 md:mt-12 grid lg:grid-cols-4 grid-cols-1 gap-5">
-        {productsList.map((card) => (
-          <Button
-            key={card.id}
-            duration={Math.floor(Math.random() * 10000) + 10000}
-            borderRadius="1.75rem"
-            style={{
-              background: "rgb(4,7,29)",
-              backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-              borderRadius: `calc(1.75rem* 0.96)`,
-            }}
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+      <div className="w-full mt-5 md:mt-12 grid md:grid-cols-2 grid-cols-1 gap-3">
+        {productsList.map((product) => (
+          <a
+            key={product.id}
+            href={product.href}
+            target="_blank"
           >
-            <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-              <Image
-                src={card.thumbnail}
-                alt={card.thumbnail}
-                width={300}
-                height={300}
-                className="lg:w-32 md:w-20 w-16"
-              />
-              <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">{card.title}</h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">{card.desc}</p>
+            <Button
+              duration={Math.floor(Math.random() * 10000) + 10000}
+              borderRadius="1.75rem"
+              style={{
+                backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+                borderRadius: `calc(1.75rem* 0.96)`,
+              }}
+              className="flex-1 text-white bg-white/10 border-white"
+            >
+              <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
+                <div className="md:h-24 h-auto">
+                  <Image
+                    src={product.thumbnail}
+                    alt={product.thumbnail}
+                    width={300}
+                    height={300}
+                    className="lg:w-32 md:w-20 w-16"
+                  />
+                </div>
+                <div className="lg:ms-5">
+                  <h1 className="text-start text-xl md:text-2xl font-bold">{product.title}</h1>
+                  <p className="text-start text-white-100 mt-3 font-semibold">{product.desc}</p>
+                </div>
               </div>
-            </div>
-          </Button>
+            </Button>
+          </a>
         ))}
       </div>
     </section>

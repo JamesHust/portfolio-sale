@@ -1,18 +1,34 @@
 import { format } from "date-fns";
 
 export const profile = {
-  titleCommon: `I'm Nguyen Van A \n Sales Manager at FPT Smart Cloud`,
+  titleCommon: `Đào Tiến Thành \n Sales Manager FPT Smart Cloud`,
   email: "thanhdt66@fpt.com",
   subjectEmail: "Booking meeting for product",
   contentEmail: `Hello, I would like to book a product meeting on ${format(new Date(), "dd-MM-yyyy")}`,
   phoneNumber: "0396814752",
 };
 
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Partners", link: "#partners" },
-  { name: "Products", link: "#products" },
-  { name: "Contact", link: "#contact" },
+export const videos = [
+  {
+    id: 1,
+    title: "Giới thiệu FPT Smart Cloud",
+    src: "https://www.youtube.com/embed/cclk7hUFSbs?si=lsu3_txhdYCl2hGp&autoplay=1",
+  },
+  {
+    id: 2,
+    title: "Hệ thống giáo dục trực tuyến VioEdu bắt tay cùng FPT Cloud trên hành trình tăng trưởng thần tốc",
+    src: "https://www.youtube.com/embed/PbsWzCyGknM?si=rIlTAEgDnHpZJp9r&autoplay=1",
+  },
+  {
+    id: 3,
+    title: "FPT Cloud giải quyết bài toán tăng trưởng của chuỗi 600 nhà thuốc Long Châu",
+    src: "https://www.youtube.com/embed/5fV_8ThcrKQ?si=mroWU0qYdIcB5HkI&autoplay=1",
+  },
+  {
+    id: 4,
+    title: "FPT GPU Server - Tăng tốc ứng dụng yêu cầu hiệu năng cao bằng bộ xử lý GPU chuyên dụng",
+    src: "https://www.youtube.com/embed/6nS4W-5St8k?si=6s9rsWmkg_7TYKhV&autoplay=1",
+  },
 ];
 
 export const certificatesPartners = [
@@ -121,30 +137,34 @@ export const certificatesPartners = [
 export const productsList = [
   {
     id: 1,
-    title: "Product 1",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    title: "Hồ sơ năng lực",
+    desc: "FPT Cloud sở hữu +80 dịch vụ Hạ tầng (IaaS) tới Nền tảng (PaaS), đồng thời mang đến cho khách hàng hệ sinh thái đa dạng ứng dụng  từ FPT và đối tác.",
     className: "md:col-span-2",
     thumbnail: "/img/exp1.svg",
+    href: "https://s3-sgn09.fptcloud.com/public/shared/CapacityCloud_Vie__view_1.2.pdf",
   },
   {
     id: 2,
-    title: "Product 2",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    title: "Câu chuyện thành công",
+    desc: "FPT Cloud là đối tác tin cậy, đồng hành cùng +3000 doanh nghiệp Việt trên hành trình chuyển đổi số bền vững.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/img/exp2.svg",
+    href: "https://s3-sgn09.fptcloud.com/public/shared/FPT_Cloud_-_Case_Study.pdf",
   },
   {
     id: 3,
-    title: "Product 3",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    title: "Tờ rơi",
+    desc: "Chúng tôi hợp tác cùng những đối tác hàng đầu để mang đến cho khách hàng những dịch vụ\n" + "ưu việt.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/img/exp3.svg",
+    href: "https://fptsmartcloud.vn/1m6n1",
   },
   {
     id: 4,
-    title: "Product 4",
-    desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    title: "Website",
+    desc: "Nền tảng FPT Cloud đạt chứng nhận cao nhất về các tiêu chuẩn chất lượng & an toàn thông tin.",
     className: "md:col-span-2",
     thumbnail: "/img/exp4.svg",
+    href: "https://fptcloud.com/",
   },
 ];

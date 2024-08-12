@@ -10,20 +10,25 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { DatePicker } from "@/components/base/date-picker";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Mail } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import MagicButton from "@/components/base/magic-button";
 import BookingSuccess, { IBookingSuccessRef } from "@/components/dialog/booking-success";
+import { Button } from "@/components/ui/button";
 
 export function Contact() {
   const words = [
     {
-      text: "Book",
+      text: "Đặt",
     },
     {
-      text: "meeting",
+      text: "lịch",
     },
     {
-      text: "now!",
+      text: "tư",
+      className: "text-purple",
+    },
+    {
+      text: "vấn!",
       className: "text-purple",
     },
   ];
@@ -79,14 +84,14 @@ export function Contact() {
 
   return (
     <section
-      className="flex flex-col items-center justify-center pb-10 pr-2 md:pr-0"
+      className="flex flex-col items-center justify-center pb-10 pr-2 md:pr-0 px-4"
       id="contact"
     >
-      <div className="pt-32">
+      <div className="pt-24 md:pt-[30vh]">
         <TypewriterEffectSmooth words={words} />
       </div>
 
-      <div className="flex flex-col items-center justify-center mt-8 md:mt-10">
+      <div className="flex flex-col items-center justify-center mt-4 md:mt-10 text-slate-900">
         <FormCard className="p-4 md:p-6 w-full">
           <Form {...form}>
             <form
@@ -186,13 +191,14 @@ export function Contact() {
                 </div>
               </div>
               <div className="flex items-center justify-center md:justify-between flex-wrap gap-4 md:gap-6 mt-2">
-                <span className="text-slate-700 text-sm">We will contact you soon. Thank you!</span>
-                <MagicButton
-                  title="Book meeting"
-                  icon={<Mail className="w-4 h-4" />}
-                  position="right"
-                  className="min-w-full max-w-full lg:min-w-[150px] lg:max-w-[250px] mt-0 md:mt-0"
-                />
+                <span className="text-white/60 text-sm">We will contact you soon. Thank you!</span>
+                <Button
+                  type="submit"
+                  className="w-full h-10 md:h-12 text-white bg-gradient-to-r from-[#516dff] from-0% via-[#9e7ee1] via-70% to-[#fa92bd] to-100%"
+                >
+                  <Mail className="w-4 h-4 mr-2" />
+                  Đặt lịch
+                </Button>
               </div>
             </form>
           </Form>

@@ -6,19 +6,21 @@ export const FormCard = ({ children, className }: { children?: ReactNode; classN
   return (
     <div
       className={cn(
-        "border border-black/[0.2] group/canvas-card flex items-center justify-center dark:border-white/[0.2] w-full max-w-[800px] mx-auto p-4 relative md:p-6 rounded-3xl",
+        "border border-white/30 group/canvas-card flex items-center justify-center w-full max-w-[800px] mx-auto p-4 relative md:p-6 rounded-3xl bg-white/10",
         className
       )}
-      style={{
-        background: "rgb(4,7,29)",
-        backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
-      }}
+      style={
+        {
+          // background: "rgb(4,7,29)",
+          // backgroundColor: "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }
+      }
     >
       {/* change to h-10 w-10 , add opacity-30  */}
-      <Icon className="absolute h-10 w-10 -top-3 -left-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -bottom-3 -left-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -top-3 -right-3 dark:text-white text-black opacity-30" />
-      <Icon className="absolute h-10 w-10 -bottom-3 -right-3 dark:text-white text-black opacity-30" />
+      <Icon className="absolute h-10 w-10 -top-3 -left-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -bottom-3 -left-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -top-3 -right-3 text-white opacity-30" />
+      <Icon className="absolute h-10 w-10 -bottom-3 -right-3 text-white opacity-30" />
       {children}
     </div>
   );

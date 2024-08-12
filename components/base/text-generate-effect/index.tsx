@@ -16,7 +16,7 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
       {
         duration: 2,
         delay: stagger(0.2),
-      }
+      },
     );
   }, [animate, wordsArray]);
 
@@ -28,7 +28,7 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
             <motion.span
               key={word + idx}
               // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx > 3 ? "text-purple" : "text-white"} opacity-0`}
+              className={` ${idx > 3 ? "text-center text-base md:text-2xl lg:text-3xl font-normal text-white/70" : "text-2xl md:text-5xl lg:text-6xl font-bold text-white leading-8 h-8"} opacity-0`}
             >
               {word === "\n" && <br />}
               {word}{" "}
@@ -42,9 +42,9 @@ export const TextGenerateEffect = ({ words, className }: { words: string; classN
   return (
     <div className={cn("font-bold", className)}>
       {/* mt-4 to my-4 */}
-      <div className="my-4">
+      <div className="my-3 md:my-4">
         {/* remove  text-2xl from the original */}
-        <div className=" text-white leading-snug tracking-wide">{renderWords()}</div>
+        <div className=" text-white">{renderWords()}</div>
       </div>
     </div>
   );
