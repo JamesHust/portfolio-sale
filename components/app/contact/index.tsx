@@ -10,8 +10,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { DatePicker } from "@/components/base/date-picker";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Mail, Phone } from "lucide-react";
-import MagicButton from "@/components/base/magic-button";
+import { Mail } from "lucide-react";
 import BookingSuccess, { IBookingSuccessRef } from "@/components/dialog/booking-success";
 import { Button } from "@/components/ui/button";
 
