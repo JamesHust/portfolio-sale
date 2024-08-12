@@ -140,7 +140,7 @@ export const productsList = [
     title: "Hồ sơ năng lực",
     desc: "FPT Cloud sở hữu +80 dịch vụ Hạ tầng (IaaS) tới Nền tảng (PaaS), đồng thời mang đến cho khách hàng hệ sinh thái đa dạng ứng dụng  từ FPT và đối tác.",
     className: "md:col-span-2",
-    thumbnail: "/img/exp1.svg",
+    thumbnail: "/img/pd_1.png",
     href: "https://s3-sgn09.fptcloud.com/public/shared/CapacityCloud_Vie__view_1.2.pdf",
   },
   {
@@ -148,7 +148,7 @@ export const productsList = [
     title: "Câu chuyện thành công",
     desc: "FPT Cloud là đối tác tin cậy, đồng hành cùng +3000 doanh nghiệp Việt trên hành trình chuyển đổi số bền vững.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/img/exp2.svg",
+    thumbnail: "/img/pd_2.png",
     href: "https://s3-sgn09.fptcloud.com/public/shared/FPT_Cloud_-_Case_Study.pdf",
   },
   {
@@ -156,7 +156,7 @@ export const productsList = [
     title: "Tờ rơi",
     desc: "Chúng tôi hợp tác cùng những đối tác hàng đầu để mang đến cho khách hàng những dịch vụ\n" + "ưu việt.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/img/exp3.svg",
+    thumbnail: "/img/pd_3.png",
     href: "https://fptsmartcloud.vn/1m6n1",
   },
   {
@@ -164,7 +164,7 @@ export const productsList = [
     title: "Website",
     desc: "Nền tảng FPT Cloud đạt chứng nhận cao nhất về các tiêu chuẩn chất lượng & an toàn thông tin.",
     className: "md:col-span-2",
-    thumbnail: "/img/exp4.svg",
+    thumbnail: "/img/pd_4.png",
     href: "https://fptcloud.com/",
   },
 ];

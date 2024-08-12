@@ -30,15 +30,13 @@ const Products = () => {
               className="flex-1 text-white bg-white/10 border-white"
             >
               <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
-                <div className="md:h-24 h-auto">
-                  <Image
-                    src={product.thumbnail}
-                    alt={product.thumbnail}
-                    width={300}
-                    height={300}
-                    className="lg:w-32 md:w-20 w-16"
-                  />
-                </div>
+                <Image
+                  src={product.thumbnail}
+                  alt={product.thumbnail}
+                  width={300}
+                  height={300}
+                  className="h-20 w-20 md:w-32 md:h-32"
+                />
                 <div className="lg:ms-5">
                   <h1 className="text-start text-xl md:text-2xl font-bold">{product.title}</h1>
                   <p className="text-start text-white-100 mt-3 font-semibold">{product.desc}</p>
