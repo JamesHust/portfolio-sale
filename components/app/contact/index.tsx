@@ -103,7 +103,7 @@ export function Contact() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Name</FormLabel>
+                      <FormLabel>Họ tên</FormLabel>
                       <FormControl>
                         <Input {...field} />
                       </FormControl>
@@ -119,7 +119,7 @@ export function Contact() {
                     name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your company</FormLabel>
+                        <FormLabel>Tên công ty</FormLabel>
                         <FormControl>
                           <Input {...field} />
                         </FormControl>
@@ -149,12 +149,12 @@ export function Contact() {
                     name="product"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Product of interest</FormLabel>
+                        <FormLabel>Sản phẩm bạn quan tâm</FormLabel>
                         <FormControl>
                           <Select onValueChange={field.onChange}>
                             <FormControl>
                               <SelectTrigger>
-                                <SelectValue placeholder="Select a product" />
+                                <SelectValue placeholder="Chọn sản phẩm" />
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
@@ -176,7 +176,7 @@ export function Contact() {
                     name="meetingTime"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Meeting time</FormLabel>
+                        <FormLabel>Thời gian</FormLabel>
                         <FormControl>
                           <DatePicker
                             value={field.value}
@@ -190,7 +190,7 @@ export function Contact() {
                 </div>
               </div>
               <div className="flex items-center justify-center md:justify-between flex-wrap gap-4 md:gap-6 mt-2">
-                <span className="text-white/60 text-sm">We will contact you soon. Thank you!</span>
+                <span className="text-white/60 text-sm">Chúng tôi sẽ phản hồi sớm nhất. Cảm ơn!</span>
                 <Button
                   type="submit"
                   className="w-full h-10 md:h-12 text-white bg-gradient-to-r from-[#516dff] from-0% via-[#9e7ee1] via-70% to-[#fa92bd] to-100%"

@@ -9,8 +9,8 @@ import {
 } from "@/components/ui/dialog";
 import animationData from "@/data/booking.json";
 import Lottie from "react-lottie";
-import MagicButton from "@/components/base/magic-button";
 import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
 
 export interface IBookingSuccessRef {
   show(): void;
@@ -42,7 +42,7 @@ const BookingSuccess = forwardRef<IBookingSuccessRef>((_, ref) => {
       onOpenChange={setOpen}
     >
       <DialogContent
-        className="md:w-[500px] w-4/5 bg-slate-950 rounded-xl md:rounded-2xl"
+        className="md:w-[500px] w-4/5 bg-white rounded-xl md:rounded-2xl"
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <Lottie options={defaultOptions} />
@@ -51,19 +51,16 @@ const BookingSuccess = forwardRef<IBookingSuccessRef>((_, ref) => {
           <DialogDescription className="text-center">Your booking meeting was successful!</DialogDescription>
         </DialogHeader>
         <DialogFooter className="flex items-center justify-center sm:justify-center">
-          <div
-            className="flex items-center justify-center"
-            onClick={() => {
-              setOpen(false);
-              router.push("#about");
-            }}
-          >
-            <MagicButton
-              title="OK"
-              icon={<></>}
-              position="right"
-              className="min-w-80px max-w-[150px]"
-            />
+          <div className="flex items-center justify-center">
+            <Button
+              className="w-full h-10 md:h-12 min-w-28 text-white bg-gradient-to-r from-[#516dff] from-0% via-[#9e7ee1] via-70% to-[#fa92bd] to-100%"
+              onClick={() => {
+                setOpen(false);
+                router.push("#about");
+              }}
+            >
+              OK
+            </Button>
           </div>
         </DialogFooter>
       </DialogContent>
