@@ -5,6 +5,7 @@ import { getLocaleOnServer } from "@/i18n/server";
 import BrowserInitiator from "@/components/browser-initiator";
 import I18NServer from "@/components/i18n-server";
 import "./globals.css";
+import Script from "next/script";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -45,6 +46,7 @@ const LocaleLayout = ({
         />
         <title>My Portfolio</title>
       </head>
+
       <body className="h-full font-sans">
         <ThemeProvider
           attribute="class"
@@ -59,6 +61,7 @@ const LocaleLayout = ({
             </I18NServer>
           </BrowserInitiator>
         </ThemeProvider>
+        <Script src="/js/chatbot.js" />
       </body>
     </html>
   );
