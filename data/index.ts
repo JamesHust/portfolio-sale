@@ -168,3 +168,51 @@ export const productsList = [
     href: "https://fptcloud.com/",
   },
 ];
+
+export const productsInterest = [
+  {
+    id: "pd_interest_1",
+    label: "FPT Cloud Server",
+    value: "FPT Cloud Server",
+  },
+  {
+    id: "pd_interest_2",
+    label: "FPT Network",
+    value: "FPT Network",
+  },
+  {
+    id: "pd_interest_3",
+    label: "FPT Cloud Backup & DR",
+    value: "FPT Cloud Backup & DR",
+  },
+  {
+    id: "pd_interest_4",
+    label: "FPT Storage",
+    value: "FPT Storage",
+  },
+  {
+    id: "pd_interest_5",
+    label: "FPT Security",
+    value: "FPT Security",
+  },
+  {
+    id: "pd_interest_6",
+    label: "FPT Database",
+    value: "FPT Database",
+  },
+  {
+    id: "pd_interest_7",
+    label: "FPT Container",
+    value: "FPT Container",
+  },
+  {
+    id: "pd_interest_8",
+    label: "FPT Monitoring",
+    value: "FPT Monitoring",
+  },
+  {
+    id: "pd_interest_9",
+    label: "FPT Integration",
+    value: "FPT Integration",
+  },
+];

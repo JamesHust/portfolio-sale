@@ -13,6 +13,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Mail } from "lucide-react";
 import BookingSuccess, { IBookingSuccessRef } from "@/components/dialog/booking-success";
 import { Button } from "@/components/ui/button";
+import { productsInterest } from "@/data";
 
 export function Contact() {
   const words = [
@@ -158,10 +159,14 @@ export function Contact() {
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              <SelectItem value="FPT.AI TOVA">FPT.AI TOVA</SelectItem>
-                              <SelectItem value="FPT.AI Enhance">FPT.AI Enhance</SelectItem>
-                              <SelectItem value="FPT Data Streaming Engine">FPT Data Streaming Engine</SelectItem>
-                              <SelectItem value="FPT Search Engine Databases">FPT Search Engine Databases</SelectItem>
+                              {productsInterest.map((i) => (
+                                <SelectItem
+                                  key={i.id}
+                                  value={i.value}
+                                >
+                                  {i.label}
+                                </SelectItem>
+                              ))}
                             </SelectContent>
                           </Select>
                         </FormControl>
