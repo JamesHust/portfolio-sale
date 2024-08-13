@@ -1,16 +1,15 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Thành;Tiến;;;
-FN:Đào Tiến Thành
-ORG:FPT Smart CLoud;
+N:Tiến Thành - FCI;;;
+FN:Đào Tiến Thành - FCI
+ORG:FPT Smart Cloud;
 TITLE:Sales Manager
 EMAIL;type=INTERNET;type=WORK;type=pref:thanhdt66@fpt.com
-TEL;type=WORK;type=pref:0396814752
 TEL;type=WORK:0396814752
-TEL;type=CELL:0396814752
-item3.URL;type=pref:https\://fci-smartcard.online/
+TEL;type=CELL:0123456789
+item3.URL;type=pref:https\://fci-smartcard.online/thanhdt66
 item3.X-ABLabel:_$!<HomePage>!$_
-item4.URL:https\://fci-smartcard.online/
+item4.URL:https\://fptcloud.com/
 item4.X-ABLabel:FOAF
 item5.X-ABRELATEDNAMES;type=pref:Thành
 item5.X-ABLabel:_$!<Friend>!$_
